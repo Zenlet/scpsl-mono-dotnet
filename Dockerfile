@@ -9,7 +9,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] 
 RUN wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && dpkg -i packages-microsoft-prod.deb
 RUN rm packages-microsoft-prod.deb
 RUN apt update
-RUN apt -y --no-install-recommends install mono-complete aspnetcore-runtime-6.0 aspnetcore-runtime-8.0
+RUN apt -y --no-install-recommends install mono-complete aspnetcore-runtime-9.0 aspnetcore-runtime-9.0
 RUN apt update
 RUN apt -y upgrade
 # RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
